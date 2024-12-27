@@ -1,6 +1,6 @@
 const { Sequelize } = require('sequelize');
 
-const sequelize = new Sequelize('railway', 'postgres', 'QmXzFLnmacJgYOBTLeWZXKpnQbXJXjxr', {
+const sequelize = new Sequelize('railway', 'postgres', 'FcKtaoMIUCWlUcLLDQJkbSDdsrMpwiMM', {
   host: 'postgres.railway.internal',
   dialect: 'postgres',
   logging: false,
