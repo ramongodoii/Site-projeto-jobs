@@ -1,0 +1,27 @@
+{
+  "name": "jobs",
+  "version": "1.0.0",
+  "description": "Portal para programadores encontrar vagas de emprego",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "dev",
+    "jobs",
+    "projeto",
+    "jobs"
+  ],
+  "author": "Ramon Godoi",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.2",
+    "express-handlebars": "^8.0.1",
+    "pg": "^8.13.1",
+    "sequelize": "^6.37.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
