@@ -1,11 +1,15 @@
 const { Sequelize } = require('sequelize');
 
-const sequelize = new Sequelize('postgresql://postgres:QmXzFLnmacJgYOBTLeWZXKpnQbXJXjxr@postgres.railway.internal:5432/railway', {
-    host: 'localhost',
-    dialect: 'postgres',
-    logging: false,
+const sequelize = new Sequelize('railway', 'postgres', 'QmXzFLnmacJgYOBTLeWZXKpnQbXJXjxr', {
+  host: 'postgres.railway.internal',
+  dialect: 'postgres',
+  logging: false,
 });
 
+sequelize.authenticate().then(() => {
+  console.log('Conectado ao banco!');
+}).catch((erro) => {
+  console.error('Erro ao conectar:', erro);
+});
 
-  module.exports = sequelize;
-
+module.exports = sequelize;
