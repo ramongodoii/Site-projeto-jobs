@@ -82,3 +82,6 @@ app.get('/', (req, res) =>{
 
 // jobs routes
 app.use('/jobs', require('./routes/jobs'));
+
+app.use('/css', express.static(path.join(__dirname, 'public/css')));
+app.use('/js', express.static(path.join(__dirname, 'public/js')));
