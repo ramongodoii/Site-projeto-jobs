@@ -158,6 +158,18 @@ display: none;
 display: block;
 }
 
+/*Corrção da pagina view*/
+.text-center {
+    text-align: center !important;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
 /* add page */
 
 #add-form-container {
@@ -240,6 +252,10 @@ color: #F03E3E;
 border: 1px solid #F03E3E;
 padding: 5px 10px;
 transition: .5s;
+order: 1;
+width: 100px;
+display: grid;
+place-items: center;
 }
 
 .back-link:hover {
